@@ -41,11 +41,28 @@
 
 // 3. Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
-Console.WriteLine("Enter a number: ");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter a number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-if(num % 2 == 0)
-{
-    Console.WriteLine("The number is even");
+// if(num % 2 == 0)
+// {
+//     Console.WriteLine("The number is even");
+// }
+// else Console.WriteLine("This is an odd number");
+
+// 4. Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+Console.WriteLine("Enter a number: ");
+int N = Convert.ToInt32(Console.ReadLine());
+
+int counter = 1;
+
+while (counter <= N)
+{   
+    if (counter % 2 == 0)
+    {
+        Console.Write($"{counter}, ");
+    }
+    counter++;
 }
-else Console.WriteLine("This is an odd number");
+
